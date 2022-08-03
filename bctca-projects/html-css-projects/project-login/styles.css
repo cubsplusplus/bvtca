@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+}
+
+.container {
+    align-items: center;
+    background-color: rgb(245, 240, 240);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.card {
+    background-color: white;
+    background-repeat: 12px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 20%;
+    min-width: 30%;
+
+}
+
+.card > main > form > label {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 30px;
+}
+
+.text-line {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    padding-top: 20px;
+}
+
+.btn {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(101, 131, 230);
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 6px 3px 10px -1px rgba(112,110,112,0.63);
+    -webkit-box-shadow: 6px 3px 10px -1px rgba(112,110,112,0.63);
+    -moz-box-shadow: 6px 3px 10px -1px rgba(112,110,112,0.63);
+    margin-bottom: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+button > span {
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+}
