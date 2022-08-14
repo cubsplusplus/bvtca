@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice4</title>
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label">
+            Name<input id="name" type="text" placeholder="Enter your name" required></input>
+        </label>
+        <label id="email-label">
+            Email <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label">
+            Age <input id="number" type="number" min="13" max="120" placeholder="Age">
+        </label>
+        <label>
+            Which option best describes your current role?
+            <select name="referrer" id="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+            </select>
+        </label>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+            <input type="radio" value="definitely" name="definitely"> Definitely
+        </label>
+            <label>
+                <input type="radio" value="Maybe" name="maybe"> Maybe
+                </label>
+            <label>
+                <input type="radio" value="not-sure" name="not-sure"> Not Sure
+            </label>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label>
+            <input type="checkbox" value="front-end"> Front-end Projects
+            <input type="checkbox" value="back-end"> Back-end Projects
+        </label>
+        <p>Any comments or suggestions</p>
+        <textarea name="textarea"  cols="30" rows="10" placeholder="Enter our comments here..."> </textarea>
+        <button id="submit"></button>
+
+    </form>
+</body>
+</html>
