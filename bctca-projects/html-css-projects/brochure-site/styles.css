@@ -1,23 +1,86 @@
-html, body {
+* {
     box-sizing: border-box;
-    display: block;
     margin: 0;
-    background-color: rgb(248, 244, 231);
+    padding: 0;
+    font-family: 'Kubmh Sans', sans-serif;
 }
 
 /* 
 start of
 navbar styles 
 */
-nav {
-    background-color: rgb(247, 230, 193);
-    height: 10vh;
-    width: 100%;
-    position: fixed;
+
+.navbar {
+  background: rgb(247, 230, 193);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-a {
-    text-decoration: none;
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#navbar-logo {
+  background-color: rgb(24, 34, 22);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0;
+  height: 100%;
+}
+
+.navbar-links:hover {
+  color: #dd4b39;
+}
+
+.navbar-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  border: dashed;
+  
+}
+
+.button:hover {
+  background: #dd4b39;
+  transition: all 0.6s ease;
 }
 
 /* 
@@ -25,51 +88,21 @@ END of
 navbar styles
 */
 
-section {
-    background-color: black;
-    border: 3px solid red ;
-    height: 400px;
-    justify-content: center;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 66vw;
-    transform: translate(-50%, -50%);
+
+/* Hero section CSS */
+
+.main {
+  background-color: #141414;
+
 }
 
-/* START of
-   footer styles
-*/
-
-footer {
-    background-color: antiquewhite;
-    bottom: 0;
-    height: 10vh;
-    position: absolute;
-    width: 100vw;
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
 }
-
-/* social media styles */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-
-/* START of
-   footer styles
-*/
-
-/* END of
-   footer styles
-*/
